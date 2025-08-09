@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/donation/page": "app/donation/page.js",
+  "/freebet/page": "app/freebet/page.js",
+  "/surebet/page": "app/surebet/page.js"
+}

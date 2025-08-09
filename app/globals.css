@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --tertiary: 142 76% 36%;
+    --tertiary-foreground: 355.7 100% 97.3%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Suas cores personalizadas */
+    --background: 200 100% 7%; /* #061b27 */
+    --foreground: 210 40% 98%;
+    --card: 200 50% 15%; /* #244d53 */
+    --card-foreground: 210 40% 98%;
+    --popover: 200 50% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 200 100% 7%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 200 30% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --tertiary: 158 45% 35%; /* #258165 */
+    --tertiary-foreground: 210 40% 98%;
+    --muted: 200 30% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 200 30% 18%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 200 30% 25%;
+    --input: 200 30% 18%;
+    --ring: 158 45% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Animações personalizadas */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

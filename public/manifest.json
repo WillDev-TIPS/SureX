@@ -1,0 +1,17 @@
+{
+  "name": "Calculadoras de Apostas",
+  "short_name": "BetCalc",
+  "description": "Ferramentas profissionais para maximizar seus lucros em apostas esportivas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#22c55e",
+  "icons": [
+    {
+      "src": "/iconapp.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradient-logo">
+            <stop stop-color="#16a34a" offset="0%"></stop>
+            <stop stop-color="#7c3aed" offset="70%"></stop>
+        </linearGradient>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+            .logo-text { font-family: 'Montserrat', sans-serif; font-weight: bold; }
+        </style>
+    </defs>
+    
+    <rect width="800" height="400" rx="20" fill="#f8fafc" />
+    <rect x="10" y="10" width="780" height="380" rx="15" fill="#fff" stroke="url(#gradient-logo)" stroke-width="3" />
+    
+    <g transform="translate(50, 100)">
+        <!-- Logo principal -->
+        <text x="350" y="100" text-anchor="middle" class="logo-text" fill="url(#gradient-logo)" font-size="80">
+            BET CALC PRO
+        </text>
+        
+        <text x="350" y="160" text-anchor="middle" class="logo-text" fill="#475569" font-size="24">
+            CALCULADORAS DE APOSTAS
+        </text>
+        
+        <!-- Ícones -->
+        <g transform="translate(150, 20)">
+            <!-- Ícone de gráfico -->
+            <path d="M0,50 L20,30 L40,60 L60,10 L80,40 L100,20" 
+                  stroke-width="8" stroke-linecap="round" stroke-linejoin="round" 
+                  fill="none" stroke="#16a34a" />
+        </g>
+        
+        <g transform="translate(480, 20)">
+            <!-- Ícone de calculadora -->
+            <rect x="0" y="0" width="60" height="70" rx="5" fill="none" stroke="#7c3aed" stroke-width="5" />
+            <line x1="10" y1="15" x2="50" y2="15" stroke="#7c3aed" stroke-width="4" />
+            <line x1="10" y1="35" x2="25" y2="35" stroke="#7c3aed" stroke-width="4" />
+            <line x1="35" y1="35" x2="50" y2="35" stroke="#7c3aed" stroke-width="4" />
+            <line x1="10" y1="55" x2="25" y2="55" stroke="#7c3aed" stroke-width="4" />
+            <line x1="35" y1="55" x2="50" y2="55" stroke="#7c3aed" stroke-width="4" />
+        </g>
+    </g>
+    
+    <!-- Versão -->
+    <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="14" fill="#94a3b8">
+        v1.0 - IMG_20250808_005312_335
+    </text>
+</svg>
